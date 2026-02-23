@@ -1,0 +1,30 @@
+services:
+  minecraft:
+    build: .
+    container_name: minecraft-server
+    restart: unless-stopped
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
+    ports:
+      - "25565:25565"
+    volumes:
+      # Mount entire server directory - worlds, plugins, configs persist
+      - .:/server
+    environment:
+      - MEM_MIN=6G
+      - MEM_MAX=6G
+    stdin_open: true   # Enable /stop command
+    tty: true
+    # Memory limit - 6GB for server, leave headroom for container
+    mem_limit: 6g
+
+  playit:
+    image: pepaondrugs/playitgg-docker:arm
+    container_name: playit-agent
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - /home/elijah/.config/playit_gg:/root/.config/playit_gg
+    depends_on:
+      - minecraft

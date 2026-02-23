@@ -1,0 +1,33 @@
+# Server jar (downloaded, not committed)
+server.jar
+
+# World data & runtime
+world/
+world_nether/
+world_the_end/
+world-*/
+*_nether/
+*_the_end/
+
+# Logs & crash reports
+logs/
+*.log
+crash-reports/
+
+# Player & server runtime data
+banned-ips.json
+banned-players.json
+ops.json
+usercache.json
+whitelist.json
+
+# Generated / local config (contains secrets, local IPs)
+server.properties
+eula.txt
+
+# Backups
+world-backup-*.tar.gz
+*.tar.gz
+
+# Misc generated
+version_history.json

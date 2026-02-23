@@ -1,0 +1,11 @@
+# Don't copy these into build context
+.git
+.gitignore
+*.md
+Dockerfile
+docker-compose.yml
+.dockerignore
+download-*.sh
+start.sh
+.cursor
+*.backup
