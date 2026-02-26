@@ -31,3 +31,17 @@ world-backup-*.tar.gz
 
 # Misc generated
 version_history.json
+
+# Test env runtime (structure and config templates kept)
+test-env/server.jar
+test-env/world/
+test-env/world_nether/
+test-env/world_the_end/
+test-env/logs/
+test-env/*.log
+test-env/crash-reports/
+test-env/banned-*.json
+test-env/ops.json
+test-env/usercache.json
+test-env/whitelist.json
+test-env/version_history.json

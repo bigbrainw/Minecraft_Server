@@ -4,6 +4,7 @@ Paper Minecraft server (Mounts of Mayhem) with plugin support, configured for **
 
 **Plugins:**
 - **TAB v5.5.0** — Shows ping/latency (ms) in the player tab list
+- **InventoryWizard** — Sort inventory/chest: double-click hotbar slot, or Shift+Right Click in inventory/chest
 
 ## Prerequisites
 
@@ -19,7 +20,7 @@ Paper Minecraft server (Mounts of Mayhem) with plugin support, configured for **
 
 ## Quick Start
 
-1. **Download the server jar**
+1. **Download the server jar** (Paper required for plugins)
    ```bash
    chmod +x download-server.sh start.sh
    ./download-server.sh
@@ -34,6 +35,12 @@ Paper Minecraft server (Mounts of Mayhem) with plugin support, configured for **
    ```
 
    First run generates the world and may take a few minutes.
+
+4. **Optional: Install InventoryWizard** (sort inventory/chest)
+   ```bash
+   ./download-inventory-sort.sh
+   # Restart server
+   ```
 
 ## Configuration
 
